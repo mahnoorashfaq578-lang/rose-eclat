@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact – Rose Éclat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="Rose Éclat home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><path d="M12 9c-3-3-7-1-6 3s5 6 6 9c1-3 5-5 6-9s-3-6-6-3z"/></svg>
+      <span>ROSE ÉCLAT</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <div class="nav-tools">
+      <button class="icon-btn" id="searchBtn" aria-label="Search" aria-expanded="false" aria-controls="searchBar">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      </button>
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <form class="search-bar" id="searchBar" role="search" hidden>
+    <input type="search" id="searchInput" placeholder="Search perfumes, notes, collections…" aria-label="Search">
+  </form>
+</header>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+  <button class="icon-btn close" id="closeBtn" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="collection.html">Collection</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html" aria-current="page">Contact</a>
+</aside>
+
+
+<header class="hero">
+  <div class="hero-bg" id="heroBg" role="img" aria-label="Rosé perfume bottle surrounded by pink flowers"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <small>GET IN TOUCH</small>
+      <h1>Let’s Stay Connected</h1>
+      <p>Have a question, feedback, or just want to say hello? We’d love to hear from you. Fill out the form below and we’ll get back to you as soon as possible.</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap grid">
+
+  <section class="card" aria-labelledby="fh">
+
+    <span class="label">SEND US A MESSAGE</span>
+    <h2 id="fh">Get in Touch</h2>
+
+    <form id="contact" novalidate action="https://formspree.io/f/mnpjrvpo" method="POST">
+
+      <div class="field"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>
+        <input id="name" name="name" placeholder="Your Name *" autocomplete="name" aria-label="Your name"><div class="msg"></div></div>
+      <div class="field"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <input id="email" name="email" type="email" placeholder="Your Email *" autocomplete="email" aria-label="Your email"><div class="msg"></div></div>
+      <div class="field"><svg class="ic" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1"/></svg>
+        <input id="subject" name="subject" placeholder="Subject" aria-label="Subject"><div class="msg"></div></div>
+      <div class="field"><svg class="ic" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>
+        <textarea id="message" name="message" maxlength="500" placeholder="Your Message *" aria-label="Your message"></textarea><span class="count" id="count">0/500</span><div class="msg">
+        </div>
+      </div>
+      <button class="btn" type="submit">Send Message <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span class="spin"></span></button>
+
+      <p class="draft" id="draft" aria-live="polite"></p>
+
+    </form>
+  </section>
+
+  <aside class="card plain" aria-label="Contact details">
+
+    <div class="info">
+      <div class="dot"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.500 7 12 7 12z"/><circle cx="12" cy="10" r="2.500"/></svg></div>
+      <div>
+        <h3>Our Location</h3>
+        <p>123 Fragrance Lane<br>Karachi, Pakistan</p>
+      </div>
+    </div>
+
+
+    <div class="info">
+      <div class="dot"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+      <div>
+        <h3>Email Us</h3>
+        <p><button class="copy" id="copyMail" title="Click to copy">hello@rose-eclat.com</button></p>
+      </div>
+    </div>
+    <div class="info">
+      <div class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div>
+        <h3>Business Hours</h3>
+        <p>Mon - Sat, 10:00 AM - 7:00 PM<br>Sunday - Closed</p>
+        <span class="status" id="status" aria-live="polite"><i></i><b>Checking…</b></span>
+      </div>
+    </div>
+
+
+    <h3 style="font-size:16px;font-weight:500">Follow Us</h3>
+
+    <div class="social">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-1 .5-1.500 1.500-1.500H17V1h-3c-3 0-4.500 2-4.500 4.500V8H7v3.500h2.500V23H14V11.500h2.800L17.300 8z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm5 3.500a4.500 4.500 0 110 9 4.500 4.500 0 010-9zm0 2a2.500 2.500 0 100 5 2.500 2.500 0 000-5zM17.500 5.500a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+      <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.600 19.300c-.1-.8-.2-2 0-2.900l1.200-5s-.3-.6-.3-1.500c0-1.400.8-2.400 1.800-2.400.9 0 1.300.6 1.300 1.400 0 .9-.5 2.100-.8 3.300-.2 1 .5 1.800 1.500 1.800 1.800 0 3.200-1.900 3.200-4.600 0-2.400-1.700-4.100-4.200-4.100-2.800 0-4.500 2.100-4.500 4.300 0 .9.300 1.800.7 2.300l-.3 1.200c-.1.200-.2.300-.4.200-1.200-.6-2-2.400-2-3.800 0-3.100 2.300-6 6.500-6 3.400 0 6 2.400 6 5.700 0 3.400-2.100 6.100-5.100 6.100-1 0-1.900-.5-2.200-1.100l-.6 2.300c-.2.800-.8 1.800-1.200 2.400A10 10 0 1012 2z"/></svg></a>
+      <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 2h-3v13a3 3 0 11-3-3c.3 0 .7 0 1 .1V9a6 6 0 105 6V8.500A7 7 0 0020 10V7a4 4 0 01-4-4z"/></svg></a>
+    </div>
+  </aside>
+</main>
+
+<section class="news" aria-labelledby="nh">
+  <div class="wrap">
+    <div>
+      <span class="label">JOIN OUR NEWSLETTER</span>
+      <h2 id="nh">Be the First to Know</h2>
+      <p>Get exclusive updates, new launches and fragrance inspiration.</p>
+    </div>
+    <form class="nform" id="news" novalidate action="https://formspree.io/f/mnpjrvpo" method="POST">
+      <input type="email" id="nmail" name="email" placeholder="Your email address" aria-label="Your email address" autocomplete="email">
+      <button class="btn" type="submit">Subscribe <span class="spin"></span></button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#">❀ ROSE ÉCLAT</a>
+    <nav aria-label="Footer"><a href="#">Home</a><a href="#">Collection</a><a href="#">Our Story</a><a href="#" aria-current="page">Contact</a></nav>
+    <button class="theme" id="theme" aria-pressed="false">Dark mode</button>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="contact.js"></script>
+</body>
+</html>

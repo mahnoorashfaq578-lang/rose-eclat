@@ -182,7 +182,7 @@ footer nav a:hover,footer nav a[aria-current]{color:var(--rose-d)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 
 /* newsletter background image */
-.news{position:relative;overflow:hidden;background:url("images/news.jpg") center/cover no-repeat}
+.news{position:relative;overflow:hidden;background:url("news.jpg") center/cover no-repeat}
 .news::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 0,var(--f1) 38%,var(--f1) 100%)}
 :root[data-theme="dark"] .news::before{background:var(--f1)}
 .news .wrap{position:relative;z-index:1}

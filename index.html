@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fdf1ef">
+  <title>Rose Éclat — The Art of Fragrance</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <i class="fa-solid fa-spa brand-icon"></i>
+      <span class="brand-name">ROSE ÉCLAT</span>
+      <span class="brand-subtitle">THE ART OF FRAGRANCE</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">Our Story</a>
+      <a href="collection.html" class="nav-link">Collection</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#collection" class="nav-button">
+      <span>Explore Scents</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <div class="hero-background">
+        <img
+          src="images/img1.png"
+          alt="Luxury fragrance in a soft pink atmosphere"
+        >
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE BEAUTY OF BEING REMEMBERED</p>
+
+        <h1 class="hero-title">
+          More than<br>
+          a scent.<br>
+          <em>A feeling.</em>
+        </h1>
+
+        <p class="hero-description">
+          Discover a world where fragrance becomes emotion.
+          Delicate notes, captivating moments and a signature
+          that feels unmistakably yours.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#collection" class="btn-primary">
+            <span>Discover the collection</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#about" class="hero-text-link">
+            <span class="play-icon"><i class="fa-solid fa-arrow-down"></i></span>
+            <span>Our story</span>
+          </a>
+        </div>
+
+        <div class="hero-caption">
+          <span>YOUR SCENT. YOUR STORY.</span>
+          <span class="caption-line"></span>
+          <span>MADE TO BE REMEMBERED</span>
+        </div>
+      </div>
+
+      <div class="hero-product">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+
+        <div class="hero-frame">
+          <img
+            src="images/img2.png"
+            alt="Elegant perfume bottle"
+          >
+          <div class="frame-glow"></div>
+        </div>
+
+        <div class="floating-card floating-card-top">
+          <i class="fa-regular fa-gem"></i>
+          <span>AN EVERYDAY<br>INDULGENCE</span>
+        </div>
+
+        <div class="floating-card floating-card-bottom">
+          <span class="tiny-flower"><i class="fa-solid fa-spa"></i></span>
+          <span>SOFT NOTES.<br>LASTING IMPRESSIONS.</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue">
+        <span>SCROLL TO DISCOVER</span>
+        <i class="fa-solid fa-arrow-down-long"></i>
+      </a>
+      <span class="hero-side-label">ROSE ÉCLAT · PARFUMS DE LUXE</span>
+    </section>
+
+    <!-- CONTINUOUS MOVING TEXT STRIP -->
+    <section class="marquee" aria-label="Rose Éclat fragrance philosophy">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>FRAGRANCE IS AN ART</span>
+          <i class="fa-solid fa-spa"></i>
+          <span>BEAUTY IN EVERY NOTE</span>
+          <i class="fa-regular fa-star"></i>
+          <span>MADE OF MEMORIES</span>
+          <i class="fa-solid fa-spa"></i>
+          <span>YOUR OWN SIGNATURE</span>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>FRAGRANCE IS AN ART</span>
+          <i class="fa-solid fa-spa"></i>
+          <span>BEAUTY IN EVERY NOTE</span>
+          <i class="fa-regular fa-star"></i>
+          <span>MADE OF MEMORIES</span>
+          <i class="fa-solid fa-spa"></i>
+          <span>YOUR OWN SIGNATURE</span>
+          <i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-padding" id="about">
+      <div class="about-visual reveal">
+        <div class="about-image-frame">
+          <img
+            src="images/img3.png"
+            alt="Beautiful perfume and floral details"
+            loading="lazy"
+          >
+          <span class="image-corner corner-tl"></span>
+          <span class="image-corner corner-br"></span>
+        </div>
+
+        <div class="about-ring"></div>
+
+        <div class="about-seal">
+          <i class="fa-solid fa-spa"></i>
+          <span>BEAUTY IN<br>EVERY NOTE</span>
+        </div>
+
+        <p class="image-caption">A WORLD CREATED WITH FEELING</p>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE ROSE ÉCLAT PHILOSOPHY</p>
+
+        <h2 class="section-title">
+          A little luxury.<br>
+          <em>A lasting feeling.</em>
+        </h2>
+
+        <p class="about-lead">
+          Because some of life's most beautiful moments cannot be put into words.
+        </p>
+
+        <p class="body-copy">
+          They linger in a familiar note, a quiet embrace, a memory you
+          wish you could experience all over again. At Rose Éclat, we
+          believe fragrance is more than something you wear — it is
+          something you feel.
+        </p>
+
+        <p class="body-copy">
+          Inspired by the softness of petals and the elegance of timeless
+          beauty, our fragrance world celebrates individuality, confidence
+          and the little rituals that make every day feel special.
+        </p>
+
+        <div class="signature">
+          <span>With love, Rose Éclat</span>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <a href="#collection" class="underlined-link">
+          Find your signature <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="collection section-padding" id="collection">
+      <div class="collection-heading reveal">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR FRAGRANCE WARDROBE</p>
+          <h2 class="section-title">
+            Meet your <em>new obsession.</em>
+          </h2>
+        </div>
+        <p class="collection-intro">
+          Every scent has a mood.<br>
+          Every mood tells a story.
+        </p>
+      </div>
+
+      <div class="perfume-grid">
+        <article class="perfume-card reveal">
+          <a href="#contact" class="perfume-image">
+            <img
+              src="images/img4.png"
+              alt="Blush Dream perfume"
+              loading="lazy"
+            >
+            <span class="image-wash"></span>
+            <span class="card-label">SOFT & ROMANTIC</span>
+            <span class="card-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+          <div class="card-details">
+            <p class="scent-notes">ROSE · MUSK · VANILLA</p>
+            <h3>Blush Dream</h3>
+            <p class="card-description">A soft floral embrace, warm and unforgettable.</p>
+            <a href="#contact" class="card-link">Discover the scent <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="perfume-card reveal">
+          <a href="#contact" class="perfume-image">
+            <img
+              src="images/img5.png"
+              alt="Golden Hour perfume"
+              loading="lazy"
+            >
+            <span class="image-wash"></span>
+            <span class="card-label">WARM & RADIANT</span>
+            <span class="card-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+          <div class="card-details">
+            <p class="scent-notes">CITRUS · AMBER · WOODS</p>
+            <h3>Golden Hour</h3>
+            <p class="card-description">Sunlit warmth with a beautifully golden finish.</p>
+            <a href="#contact" class="card-link">Discover the scent <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="perfume-card reveal">
+          <a href="#contact" class="perfume-image">
+            <img
+              src="images/im6.png"
+              alt="Rose Infini perfume"
+              loading="lazy"
+            >
+            <span class="image-wash"></span>
+            <span class="card-label">GRACEFUL & BOLD</span>
+            <span class="card-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+          <div class="card-details">
+            <p class="scent-notes">ROSE · PEONY · OUD</p>
+            <h3>Rose Infini</h3>
+            <p class="card-description">Velvety florals with a confident, elegant soul.</p>
+            <a href="#contact" class="card-link">Discover the scent <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="perfume-card reveal">
+          <a href="#contact" class="perfume-image">
+            <img
+              src="images/img7.png"
+              alt="Velvet Noir perfume"
+              loading="lazy"
+            >
+            <span class="image-wash"></span>
+            <span class="card-label">DEEP & MYSTERIOUS</span>
+            <span class="card-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+          <div class="card-details">
+            <p class="scent-notes">PATCHOULI · LEATHER · MUSK</p>
+            <h3>Velvet Noir</h3>
+            <p class="card-description">A rich, intimate scent that leaves an impression.</p>
+            <a href="#contact" class="card-link">Discover the scent <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="collection-bottom reveal">
+        <p>YOUR NEXT FAVOURITE IS WAITING TO BE DISCOVERED.</p>
+        <a href="#contact" class="btn-outline">
+          Explore our world <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- LUXURY BANNER -->
+    <section class="signature-banner">
+      <div class="banner-photo">
+        <img
+          src="images/img8.png"
+          alt="Elegant fragrance with delicate floral styling"
+          loading="lazy"
+        >
+      </div>
+      <div class="banner-tint"></div>
+
+      <div class="banner-decoration">
+        <i class="fa-solid fa-spa"></i>
+      </div>
+
+      <div class="banner-content reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR MOMENT OF BEAUTY</p>
+        <h2>Leave a little<br><em>magic behind.</em></h2>
+        <p class="banner-description">
+          A fragrance can turn an ordinary moment into something
+          extraordinary. Find the one that feels like your story.
+        </p>
+        <a href="collection.html" class="btn-light">
+          <span>Find your fragrance</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-top">
+        <div class="footer-brand-column">
+          <a href="#home" class="brand footer-brand">
+            <i class="fa-solid fa-spa brand-icon"></i>
+            <span class="brand-name">ROSE ÉCLAT</span>
+            <span class="brand-subtitle">THE ART OF FRAGRANCE</span>
+          </a>
+          <p>A fragrance for the moments<br>that become memories.</p>
+
+          <div class="social-links">
+            <a href="contact.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="contact.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="mailto:mahnoorashfaq578@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>DISCOVER</h4>
+          <a href="#home">Home</a>
+          <a href="contact.html">Our Story</a>
+          <a href="collection.html">The Collection</a>
+          <a href="collection.html">Fragrance Notes</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>THE DETAILS</h4>
+          <a href="#about">Our Philosophy</a>
+          <a href="#collection">Signature Scents</a>
+          <a href="mailto:hello@roseeclat.com">Get in Touch</a>
+        </div>
+
+        <div class="footer-theme-column">
+          <h4>SET YOUR MOOD</h4>
+          <p>Choose your favourite atmosphere.</p>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">
+            <span class="theme-icon"><i class="fa-solid fa-sun"></i></span>
+            <span class="theme-label">LIGHT MODE</span>
+            <span class="theme-switch"><span></span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-marquee" aria-hidden="true">
+        <div class="footer-marquee-track">
+          <span>ROSE ÉCLAT</span><i class="fa-solid fa-spa"></i>
+          <span>THE ART OF FRAGRANCE</span><i class="fa-regular fa-star"></i>
+          <span>ROSE ÉCLAT</span><i class="fa-solid fa-spa"></i>
+          <span>THE ART OF FRAGRANCE</span><i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 ROSE ÉCLAT. ALL RIGHTS RESERVED.</span>
+        <span>MADE WITH <i class="fa-solid fa-heart"></i> AND FRAGRANCE</span>
+        <a href="#home">BACK TO TOP <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
